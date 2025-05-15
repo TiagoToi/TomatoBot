@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Windows;
 
 namespace TomatoTrack.Helpers
 {
@@ -13,34 +14,41 @@ namespace TomatoTrack.Helpers
 
         public static void SalvarEAbrirImagens(List<byte[]> imagensBytes)
         {
-            LimparPastaTemporaria();
-
-            List<string> caminhosSalvos = new List<string>();
-            int contador = 1;
-
-            foreach (var imagemBytes in imagensBytes)
+            try
             {
-                string caminhoImagem = Path.Combine(PastaTemp, $"imagem_{contador}.jpg");
+                LimparPastaTemporaria();
 
-                using (var ms = new MemoryStream(imagemBytes))
-                using (var imagem = Image.FromStream(ms))
+                List<string> caminhosSalvos = new List<string>();
+                int contador = 1;
+
+                foreach (var imagemBytes in imagensBytes)
                 {
-                    imagem.Save(caminhoImagem, ImageFormat.Jpeg);
+                    string caminhoImagem = Path.Combine(PastaTemp, $"imagem_{contador}.jpg");
+
+                    using (var ms = new MemoryStream(imagemBytes))
+                    using (var imagem = Image.FromStream(ms))
+                    {
+                        imagem.Save(caminhoImagem, ImageFormat.Jpeg);
+                    }
+
+                    caminhosSalvos.Add(caminhoImagem);
+                    contador++;
                 }
 
-                caminhosSalvos.Add(caminhoImagem);
-                contador++;
-            }
-
-            // Abre todas as imagens com o visualizador padrão
-            foreach (var caminho in caminhosSalvos)
-            {
-                Process.Start(new ProcessStartInfo
+                // Abre todas as imagens com o visualizador padrão
+                foreach (var caminho in caminhosSalvos)
                 {
-                    FileName = caminho,
-                    UseShellExecute = true
-                });
-            }            
+                    Process.Start(new ProcessStartInfo
+                    {
+                        FileName = caminho,
+                        UseShellExecute = true
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao abrir imagens: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }        
         }
 
         // Método opcional: limpar a pasta temporária se quiser
@@ -52,7 +60,8 @@ namespace TomatoTrack.Helpers
                 {
                     try
                     {
-                        File.Delete(arquivo);
+                        if (arquivo.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase))
+                            File.Delete(arquivo);
                     }
                     catch (Exception ex)
                     {
