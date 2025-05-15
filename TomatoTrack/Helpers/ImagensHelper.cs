@@ -10,7 +10,7 @@ namespace TomatoTrack.Helpers
 {
     public static class ImagensHelper
     {
-        private static readonly string PastaTemp = "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\TomatoTrack\\ImagensTemp";
+        private static string PastaTemp = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\ImagensTemp"));
 
         public static void SalvarEAbrirImagens(List<byte[]> imagensBytes)
         {
