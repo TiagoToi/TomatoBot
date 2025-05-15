@@ -5,10 +5,13 @@ import cv2
 import numpy as np
 import base64
 import statistics
+import os
 
 app = FastAPI()
 
-model = YOLO("C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\API Python\\modelos\\best.pt")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(script_dir, "modelos", "best.pt")
+model = YOLO(model_path)
 
 @app.post("/predict")
 async def predict(files: list[UploadFile] = File(...)):
