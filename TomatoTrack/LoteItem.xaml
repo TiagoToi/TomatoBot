@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="TomatoTrack.LoteItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="Auto" Width="Auto">
+    <Border BorderThickness="1" BorderBrush="#DDD" CornerRadius="10" Padding="15" Margin="0,0,0,20" Background="White">
+        <StackPanel>
+            <DockPanel>
+                <TextBlock x:Name="txtNomeLote" Text="Lote tal" FontWeight="Bold" FontSize="18" VerticalAlignment="Center"/>
+                <Button x:Name="BtnExpandir" Content="+ Detalhes" DockPanel.Dock="Right" Width="100" Margin="10,0,0,0" HorizontalAlignment="Right"
+                        Click="BtnExpandir_Click" Background="Transparent" BorderBrush="Transparent" FontWeight="Bold" Foreground="#0000EE" FontSize="15"/>
+            </DockPanel>
+
+            <StackPanel x:Name="DetalhesPanel" Visibility="Collapsed" Margin="10,20,0,0" Background="Transparent">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="350" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text=" Total tomates:" FontSize="15" Margin="0,0,0,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="0" Grid.Column="0"/>
+                    <TextBlock x:Name="txtTotalTomates" Text="" FontSize="14" Margin="0,0,5,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="0" Grid.Column="1" />
+                    <TextBlock Text=" Tomates Maduros:" FontSize="15" Margin="0,0,0,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="1" Grid.Column="0"/>
+                    <TextBlock x:Name="txtTomatesMaduros" Text="" FontSize="14" Margin="0,0,5,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="1" Grid.Column="1" />
+                    <TextBlock Text=" Média de acerto da IA:" FontSize="15" Margin="0,0,0,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="2" Grid.Column="0"/>
+                    <TextBlock x:Name="txtMediaAcerto" Text="" FontSize="14" Margin="0,0,5,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="2" Grid.Column="1" />
+                    <TextBlock Text=" Desvio padrão da média de acerto:" FontSize="15" Margin="0,0,0,10" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="Bold" Grid.Row="3" Grid.Column="0"/>
+                    <TextBlock x:Name="txtDesvioPadrao" Text="" FontSize="14" Margin="0,0,5,10" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="DemiBold" Grid.Row="3" Grid.Column="1"  />
+                    <TextBlock Text=" Número de Imagens:" FontSize="15" Margin="0,0,0,10" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="Bold" Grid.Row="4" Grid.Column="0"/>
+                    <TextBlock x:Name="txtNumImagens" Text="" FontSize="14" Margin="0,0,5,10" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="DemiBold" Grid.Row="4" Grid.Column="1"  />
+                    <Button Content="Visualizar Imagens" Width="140" Height="30" Margin="0 0 5 0" Click="VisualizarImagens_Click" HorizontalAlignment="Right" Background="LightSteelBlue" FontWeight="DemiBold" Grid.Row="5" Grid.Column="1"/>
+                </Grid>                
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

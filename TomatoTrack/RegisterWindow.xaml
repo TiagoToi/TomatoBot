@@ -1,0 +1,53 @@
+﻿<Window x:Class="TomatoTrack.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="590" Width="400" 
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow"
+        Icon="logo.ico"
+        ResizeMode="NoResize">
+
+    <Grid Margin="20" Background="#F4F4F4">
+
+        <Border BorderBrush="#DDD" BorderThickness="1" CornerRadius="10" Background="White" Padding="20">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+
+                <Image Source="Resources/logo tomatobot.png" Height="80" Margin="0 -5 0 0" HorizontalAlignment="Center"/>
+
+                <TextBlock Text="Criar Conta" FontSize="24" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 20"/>
+
+                <TextBlock Text="Nome Completo" Margin="10 0 0 2"/>
+                <TextBox x:Name="NomeTextBox" Margin="0 5" Padding="10" BorderBrush="#ccc" BorderThickness="1" Height="37"/>
+
+                <TextBlock Text="E-mail" Margin="10 5 0 2"/>
+                <TextBox x:Name="EmailTextBox" Margin="0 5" Padding="10" BorderBrush="#ccc" BorderThickness="1" Height="37" />
+
+                <TextBlock Text="Senha" Margin="10 5 0 2"/>
+                <Grid Margin="0 5">
+                    <PasswordBox x:Name="SenhaBox" Padding="10" Height="37" BorderBrush="#ccc" BorderThickness="1" PasswordChanged="SenhaBox_PasswordChanged" />
+
+                    <TextBox x:Name="SenhaTextBox" Padding="10" Height="37" BorderBrush="#ccc" BorderThickness="1" Visibility="Collapsed" TextChanged="SenhaTextBox_TextChanged" />
+
+                    <Button Content="👁" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center"
+                            Margin="0 0 5 0" Click="MostrarSenha_Click"
+                            Background="Transparent" BorderBrush="{x:Null}" Cursor="Hand"/>
+                </Grid>
+
+                <TextBlock Text="Confirmar Senha" Margin="10 5 0 2"/>
+                <Grid Margin="0 5">
+                    <PasswordBox x:Name="ConfirmarSenhaBox" Padding="10" Height="37" BorderBrush="#ccc" BorderThickness="1" PasswordChanged="ConfirmarSenhaBox_PasswordChanged" />
+
+                    <TextBox x:Name="ConfirmarSenhaTextBox" Padding="10" Height="37" BorderBrush="#ccc" BorderThickness="1" Visibility="Collapsed" TextChanged="ConfirmarSenhaTextBox_TextChanged" />
+
+                    <Button Content="👁" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center"
+                            Margin="0 0 5 0" Click="MostrarConfirmarSenha_Click"
+                            Background="Transparent" BorderBrush="{x:Null}" Cursor="Hand"/>
+                </Grid>
+
+                <Button Content="Criar Conta" Margin="0 20 0 0" Height="35" Background="#FFB84D" Foreground="White" BorderBrush="#FFB84D" BorderThickness="1" FontWeight="Bold" Click="CriarConta_Click"/>
+            </StackPanel>
+        </Border>
+
+        <Button Content="←" FontSize="24" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Voltar_Click" Background="Transparent" BorderThickness="0" Cursor="Hand" ToolTip="Voltar" />
+    </Grid>
+</Window>

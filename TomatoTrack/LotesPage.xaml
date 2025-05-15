@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="TomatoTrack.LotesPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TomatoTrack"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             Background="#F9FAFB">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="30">
+            <TextBlock Text="Histórico de Lotes" FontSize="28" FontWeight="Bold" Margin="0,0,0,20"/>
+
+            <!-- Lista de lotes -->
+            <ItemsControl x:Name="LotesList">
+                <!-- Os itens serão do tipo LoteItemControl -->
+            </ItemsControl>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
