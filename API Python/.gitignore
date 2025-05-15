@@ -14,3 +14,10 @@ Thumbs.db
 # Ignorar arquivos de configurações do editor (exemplos)
 .vscode/
 .idea/
+
+# Ignora todos os arquivos da pasta ImagensTemp
+**/ImagensTemp/
+
+# Mas permite que a própria pasta exista (sem arquivos)
+!TomatoTrack/ImagensTemp/.gitkeep
+

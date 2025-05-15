@@ -17,16 +17,16 @@
                 <TextBlock Text="Criar Conta" FontSize="24" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 20"/>
 
                 <TextBlock Text="Nome Completo" Margin="10 0 0 2"/>
-                <TextBox x:Name="NomeTextBox" Margin="0 5" Padding="10" BorderBrush="#ccc" BorderThickness="1" Height="37"/>
+                <TextBox x:Name="NomeTextBox" Margin="0 5" Padding="10" BorderBrush="#ccc" BorderThickness="1" Height="40"/>
 
                 <TextBlock Text="E-mail" Margin="10 5 0 2"/>
-                <TextBox x:Name="EmailTextBox" Margin="0 5" Padding="10" BorderBrush="#ccc" BorderThickness="1" Height="37" />
+                <TextBox x:Name="EmailTextBox" Margin="0 5" Padding="10" BorderBrush="#ccc" BorderThickness="1" Height="40" />
 
                 <TextBlock Text="Senha" Margin="10 5 0 2"/>
                 <Grid Margin="0 5">
-                    <PasswordBox x:Name="SenhaBox" Padding="10" Height="37" BorderBrush="#ccc" BorderThickness="1" PasswordChanged="SenhaBox_PasswordChanged" />
+                    <PasswordBox x:Name="SenhaBox" Padding="10" Height="40" BorderBrush="#ccc" BorderThickness="1" PasswordChanged="SenhaBox_PasswordChanged" />
 
-                    <TextBox x:Name="SenhaTextBox" Padding="10" Height="37" BorderBrush="#ccc" BorderThickness="1" Visibility="Collapsed" TextChanged="SenhaTextBox_TextChanged" />
+                    <TextBox x:Name="SenhaTextBox" Padding="10" Height="40" BorderBrush="#ccc" BorderThickness="1" Visibility="Collapsed" TextChanged="SenhaTextBox_TextChanged" />
 
                     <Button Content="👁" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center"
                             Margin="0 0 5 0" Click="MostrarSenha_Click"
@@ -35,9 +35,9 @@
 
                 <TextBlock Text="Confirmar Senha" Margin="10 5 0 2"/>
                 <Grid Margin="0 5">
-                    <PasswordBox x:Name="ConfirmarSenhaBox" Padding="10" Height="37" BorderBrush="#ccc" BorderThickness="1" PasswordChanged="ConfirmarSenhaBox_PasswordChanged" />
+                    <PasswordBox x:Name="ConfirmarSenhaBox" Padding="10" Height="40" BorderBrush="#ccc" BorderThickness="1" PasswordChanged="ConfirmarSenhaBox_PasswordChanged" />
 
-                    <TextBox x:Name="ConfirmarSenhaTextBox" Padding="10" Height="37" BorderBrush="#ccc" BorderThickness="1" Visibility="Collapsed" TextChanged="ConfirmarSenhaTextBox_TextChanged" />
+                    <TextBox x:Name="ConfirmarSenhaTextBox" Padding="10" Height="40" BorderBrush="#ccc" BorderThickness="1" Visibility="Collapsed" TextChanged="ConfirmarSenhaTextBox_TextChanged" />
 
                     <Button Content="👁" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center"
                             Margin="0 0 5 0" Click="MostrarConfirmarSenha_Click"

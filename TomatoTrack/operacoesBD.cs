@@ -173,7 +173,10 @@ namespace TomatoTrack
 
         public static SQLiteConnection Conectar()
         {
-            String caminhoBanco = "DataSource=C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\Banco De Dados\\TomatoTrack.db;Version=3";
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string caminho = Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\Banco De Dados\TomatoTrack.db"));
+            string caminhoBanco = $"Data Source={caminho};Version=3";
+
 
             SQLiteConnection conn = new SQLiteConnection(caminhoBanco);
             try

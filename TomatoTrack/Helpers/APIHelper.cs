@@ -17,7 +17,10 @@ namespace TomatoTrack.Helpers
     {
         public static async Task<LoteModel> AnalisaImagens(List<String> filePaths)
         {
-            var client = new HttpClient();
+            var client = new HttpClient()
+            {
+                Timeout = TimeSpan.FromMinutes(3) 
+            };
             var content = new MultipartFormDataContent();
 
             foreach (var path in filePaths)
@@ -30,7 +33,8 @@ namespace TomatoTrack.Helpers
             HttpResponseMessage response = new HttpResponseMessage();
             try
             {
-                response = await client.PostAsync("http://localhost:8000/predict", content);
+                //response = await client.PostAsync("http://localhost:8000/predict", content) // LOCAL
+                response = await client.PostAsync("https://TomatoBot.onrender.com/predict", content);
             }
             catch (Exception ex)
             {
