@@ -19,7 +19,7 @@ namespace TomatoTrack.Helpers
         {
             var client = new HttpClient()
             {
-                Timeout = TimeSpan.FromMinutes(2) 
+                Timeout = TimeSpan.FromMinutes(5) 
             };
             var content = new MultipartFormDataContent();
 
