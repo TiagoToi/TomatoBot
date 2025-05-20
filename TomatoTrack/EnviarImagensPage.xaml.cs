@@ -44,6 +44,11 @@ namespace TomatoTrack
             {
                 // Adiciona as imagens selecionadas à lista de pré-visualização
                 CaminhosImagensSelecionadas = openFileDialog.FileNames.ToList();
+                if (CaminhosImagensSelecionadas.Count()>100){
+                    CaminhosImagensSelecionadas = null;
+                    MessageBox.Show("Selecione no máximo 100 imagens para análise.", "Atenção");
+                    return;
+                }
                 PreviewImagens.ItemsSource = CaminhosImagensSelecionadas;
                 TituloPreview.Visibility = Visibility.Visible;
                 PreviewImagens.Visibility = Visibility.Visible;
