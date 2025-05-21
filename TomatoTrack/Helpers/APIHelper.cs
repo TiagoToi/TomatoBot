@@ -62,8 +62,10 @@ namespace TomatoTrack.Helpers
                 Imagens = resultadoImagensBytes,
                 TotalTomates = parsed.TotalTomates,
                 TomatesMaduros = parsed.Maduros,
-                //PorcentagemAcertoIA = parsed.MediaConfianca,
-                //desvioPadrao = parsed.DesvioConfianca,
+                mediaScoreMaduros = parsed.media_confianca_maduros,
+                desvioPadraoMaduros = parsed.desvio_confianca_maduros,
+                mediaScoreVerdes = parsed.media_confianca_verde,
+                desvioPadraoVerdes = parsed.desvio_confianca_verde,
                 NumeroImagens = filePaths.Count                
             };
 

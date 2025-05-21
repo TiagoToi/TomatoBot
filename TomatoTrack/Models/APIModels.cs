@@ -17,16 +17,22 @@ namespace TomatoTrack.Models
     public class ApiResponse
     {
         [JsonProperty("total_tomates")]
-        public int TotalTomates { get; set; }
+        public int total_tomates { get; set; }
 
         [JsonProperty("maduros")]
-        public int Maduros { get; set; }
+        public int maduros { get; set; }                     
 
-        [JsonProperty("media_confianca")]
-        public double MediaConfianca { get; set; }
+        [JsonProperty("media_confianca_maduros")]
+        public double media_confianca_maduros { get; set; }
 
-        [JsonProperty("desvio_confianca")]
-        public double DesvioConfianca { get; set; }
+        [JsonProperty("media_confianca_verde")]
+        public double media_confianca_verde { get; set; }
+
+        [JsonProperty("desvio_confianca_maduros")]
+        public double desvio_confianca_maduros { get; set; }
+
+        [JsonProperty("desvio_confianca_verde")]
+        public double desvio_confianca_verde { get; set; }
 
         public List<PredictionResult> results { get; set; }
     }
