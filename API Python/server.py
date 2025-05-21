@@ -59,15 +59,17 @@ async def predict(files: list[UploadFile] = File(...)):
 
     media_maduros = 0
     desvioPadrao_maduros = 0
-    if confiancas_maduros.count>0: 
+    if len(confiancas_maduros) > 0: 
         media_maduros = statistics.mean(confiancas_maduros)
-        desvioPadrao_maduros = statistics.stdev(confiancas_maduros)
+        if len(confiancas_maduros) > 1:
+            desvioPadrao_maduros = statistics.stdev(confiancas_maduros)
 
     media_verde = 0
     desvioPadrao_verde = 0
-    if confiancas_verde.count>0: 
+    if len(confiancas_verde) > 0: 
         media_verde = statistics.mean(confiancas_verde)
-        desvioPadrao_verde = statistics.stdev(confiancas_verde)
+        if len(confiancas_verde) > 1:
+            desvioPadrao_verde = statistics.stdev(confiancas_verde)
 
     return JSONResponse(content={
         "total_tomates": qntTomates,

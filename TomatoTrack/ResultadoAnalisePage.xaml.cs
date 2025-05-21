@@ -38,8 +38,10 @@ namespace TomatoTrack
             txtDataHora.Text = horarioAtual.ToString("dd/MM/yyyy HH:mm");
             txtTotalTomates.Text = resultado.TotalTomates.ToString();
             txtQntMaduros.Text = resultado.TomatesMaduros.ToString();
-            //txtPrecisaoIA.Text = resultado.PorcentagemAcertoIA.ToString("F2") + "%";
-            //txtDesvioPadrao.Text = resultado.desvioPadrao.ToString("F2");
+            int qntVerdes = resultado.TotalTomates - resultado.TomatesMaduros;
+            txtQntVerdes.Text = qntVerdes.ToString();
+            txtMediaScoreMaduros.Text = resultado.mediaScoreMaduros.ToString("F2") + $"% (Desvio padrão: {resultado.desvioPadraoMaduros.ToString("F2")})";
+            txtMediaScoreVerdes.Text = resultado.mediaScoreVerdes.ToString("F2") + $"% (Desvio padrão: {resultado.desvioPadraoVerdes.ToString("F2")})";
             txtNumImagens.Text = resultado.NumeroImagens.ToString();
         }
 

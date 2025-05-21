@@ -60,8 +60,8 @@ namespace TomatoTrack.Helpers
             LoteModel resultado = new LoteModel()
             {
                 Imagens = resultadoImagensBytes,
-                TotalTomates = parsed.TotalTomates,
-                TomatesMaduros = parsed.Maduros,
+                TotalTomates = parsed.total_tomates,
+                TomatesMaduros = parsed.maduros,
                 mediaScoreMaduros = parsed.media_confianca_maduros,
                 desvioPadraoMaduros = parsed.desvio_confianca_maduros,
                 mediaScoreVerdes = parsed.media_confianca_verde,
