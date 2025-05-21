@@ -14,3 +14,28 @@ Thumbs.db
 # Ignorar arquivos de configurações do editor (exemplos)
 .vscode/
 .idea/
+
+# Build results
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.vs/
+*.vscode/
+
+# Auto-generated files
+*.g.cs
+*.g.i.cs
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates

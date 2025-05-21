@@ -42,3 +42,4 @@ C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\D
 C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Debug\TomatoTr.D5B33232.Up2Date
 C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Debug\TomatoTrack.exe
 C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Debug\TomatoTrack.pdb
+C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Debug\TomatoTrack.exe.config
