@@ -54,6 +54,7 @@ async def predict(files: list[UploadFile] = File(...)):
             "status": "ok"
         })
 
+    # TRATAR ERRO LISTA VAZIA
     media = statistics.mean(confiancas)
     desvioPadrao = statistics.stdev(confiancas)
 

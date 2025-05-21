@@ -32,10 +32,12 @@ namespace TomatoTrack
             Lote = lote;
             txtNomeLote.Text = $"Lote de {lote.DataHora.ToString("dd/MM/yyyy HH:mm")}";
             txtTotalTomates.Text = lote.TotalTomates.ToString();
-            txtTomatesMaduros.Text = lote.TomatesMaduros.ToString();
             txtNumImagens.Text = lote.NumeroImagens.ToString();
-            txtDesvioPadrao.Text = lote.desvioPadrao.ToString("F2");
-            txtMediaAcerto.Text = lote.PorcentagemAcertoIA.ToString("F2") + "%";
+            txtTomatesMaduros.Text = lote.TomatesMaduros.ToString();
+            int verdes = lote.TotalTomates - lote.TomatesMaduros;
+            txtTomatesVerdes.Text = verdes.ToString();
+            txtScoreMaduros.Text = lote.mediaScoreMaduros.ToString("F2") + $"% (desvio padrão: {lote.desvioPadraoMaduros})";
+            txtScoreVerdes.Text = lote.mediaScoreVerdes.ToString("F2") + $"% (desvio padrão: {lote.desvioPadraoVerdes})";
         }
 
         private void BtnExpandir_Click(object sender, RoutedEventArgs e)

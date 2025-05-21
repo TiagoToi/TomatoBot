@@ -33,8 +33,8 @@ namespace TomatoTrack.Helpers
             HttpResponseMessage response = new HttpResponseMessage();
             try
             {
-                //response = await client.PostAsync("http://localhost:8000/predict", content) // LOCAL
-                response = await client.PostAsync("https://TomatoBot.onrender.com/predict", content);
+                response = await client.PostAsync("http://localhost:8000/predict", content); // LOCAL
+                //response = await client.PostAsync("https://TomatoBot.onrender.com/predict", content);
             }
             catch (Exception ex)
             {
@@ -62,8 +62,8 @@ namespace TomatoTrack.Helpers
                 Imagens = resultadoImagensBytes,
                 TotalTomates = parsed.TotalTomates,
                 TomatesMaduros = parsed.Maduros,
-                PorcentagemAcertoIA = parsed.MediaConfianca,
-                desvioPadrao = parsed.DesvioConfianca,
+                //PorcentagemAcertoIA = parsed.MediaConfianca,
+                //desvioPadrao = parsed.DesvioConfianca,
                 NumeroImagens = filePaths.Count                
             };
 

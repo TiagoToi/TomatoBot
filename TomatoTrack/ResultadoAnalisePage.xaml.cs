@@ -38,8 +38,8 @@ namespace TomatoTrack
             txtDataHora.Text = horarioAtual.ToString("dd/MM/yyyy HH:mm");
             txtTotalTomates.Text = resultado.TotalTomates.ToString();
             txtQntMaduros.Text = resultado.TomatesMaduros.ToString();
-            txtPrecisaoIA.Text = resultado.PorcentagemAcertoIA.ToString("F2") + "%";
-            txtDesvioPadrao.Text = resultado.desvioPadrao.ToString("F2");
+            //txtPrecisaoIA.Text = resultado.PorcentagemAcertoIA.ToString("F2") + "%";
+            //txtDesvioPadrao.Text = resultado.desvioPadrao.ToString("F2");
             txtNumImagens.Text = resultado.NumeroImagens.ToString();
         }
 
@@ -51,7 +51,7 @@ namespace TomatoTrack
         private void SalvarLote_Click(object sender, RoutedEventArgs e)
         {
             String horarioString = resultado.DataHora.ToString("dd/MM/yyyy HH:mm");
-            bool exito = operacoesBD.SalvarLote(IdUser, horarioString, resultado.TotalTomates, resultado.TomatesMaduros, resultado.PorcentagemAcertoIA, resultado.desvioPadrao, resultado.Imagens);
+            bool exito = operacoesBD.SalvarLote(IdUser, horarioString, resultado.TotalTomates, resultado.TomatesMaduros, resultado.mediaScoreMaduros, resultado.desvioPadraoMaduros, resultado.mediaScoreVerdes, resultado.desvioPadraoVerdes, resultado.Imagens);
 
             if (exito)
             {

@@ -23,19 +23,28 @@
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Text=" Total tomates:" FontSize="15" Margin="0,0,0,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="0" Grid.Column="0"/>
-                    <TextBlock x:Name="txtTotalTomates" Text="" FontSize="14" Margin="0,0,5,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="0" Grid.Column="1" />
-                    <TextBlock Text=" Tomates Maduros:" FontSize="15" Margin="0,0,0,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="1" Grid.Column="0"/>
-                    <TextBlock x:Name="txtTomatesMaduros" Text="" FontSize="14" Margin="0,0,5,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="1" Grid.Column="1" />
-                    <TextBlock Text=" Média de acerto da IA:" FontSize="15" Margin="0,0,0,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="2" Grid.Column="0"/>
-                    <TextBlock x:Name="txtMediaAcerto" Text="" FontSize="14" Margin="0,0,5,10" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="2" Grid.Column="1" />
-                    <TextBlock Text=" Desvio padrão da média de acerto:" FontSize="15" Margin="0,0,0,10" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="Bold" Grid.Row="3" Grid.Column="0"/>
-                    <TextBlock x:Name="txtDesvioPadrao" Text="" FontSize="14" Margin="0,0,5,10" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="DemiBold" Grid.Row="3" Grid.Column="1"  />
-                    <TextBlock Text=" Número de Imagens:" FontSize="15" Margin="0,0,0,10" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="Bold" Grid.Row="4" Grid.Column="0"/>
-                    <TextBlock x:Name="txtNumImagens" Text="" FontSize="14" Margin="0,0,5,10" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="DemiBold" Grid.Row="4" Grid.Column="1"  />
-                    <Button Content="Visualizar Imagens" Width="140" Height="30" Margin="0 0 5 0" Click="VisualizarImagens_Click" HorizontalAlignment="Right" Background="LightSteelBlue" FontWeight="DemiBold" Grid.Row="5" Grid.Column="1"/>
+                    <TextBlock Text=" Total tomates:" FontSize="15" Margin="0,5,0,5" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="0" Grid.Column="0"/>
+                    <TextBlock x:Name="txtTotalTomates" Text="" FontSize="14" Margin="0,5,5,5" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="0" Grid.Column="1" />
+
+                    <TextBlock Text=" Número de Imagens:" FontSize="15" Margin="0,5,0,5" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="Bold" Grid.Row="1" Grid.Column="0"/>
+                    <TextBlock x:Name="txtNumImagens" Text="" FontSize="14" Margin="0,5,5,5" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="DemiBold" Grid.Row="1" Grid.Column="1"  />
+
+                    <TextBlock Text=" Tomates Maduros:" FontSize="15" Margin="0,5,0,5" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="2" Grid.Column="0"/>                    
+                    <TextBlock x:Name="txtTomatesMaduros" Text="" FontSize="14" Margin="0,5,5,5" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="2" Grid.Column="1" />
+
+                    <TextBlock Text=" Tomates Verdes:" FontSize="15" Margin="0,5,0,5" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="3" Grid.Column="0"/>
+                    <TextBlock x:Name="txtTomatesVerdes" Text="" FontSize="14" Margin="0,5,5,5" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="3" Grid.Column="1" />
+
+                    <TextBlock Text=" Media Score Maduros:" FontSize="15" Margin="0,5,0,5" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="Bold" Grid.Row="4" Grid.Column="0"/>
+                    <TextBlock x:Name="txtScoreMaduros" Text="" FontSize="14" Margin="0,5,5,5" Background="#FFF0F0F0" TextWrapping="Wrap" FontWeight="DemiBold" Grid.Row="4" Grid.Column="1" />
+
+                    <TextBlock Text=" Media Score Verdes:" FontSize="15" Margin="0,5,0,5" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="Bold" Grid.Row="5" Grid.Column="0"/>
+                    <TextBlock x:Name="txtScoreVerdes" Text="" FontSize="14" Margin="0,5,5,5" TextWrapping="Wrap" Background="#FFF0F0F0" FontWeight="DemiBold" Grid.Row="5" Grid.Column="1"  />
+
+                    <Button Content="Visualizar Imagens" Width="140" Height="30" Margin="0 0 5 0" Click="VisualizarImagens_Click" HorizontalAlignment="Right" Background="LightSteelBlue" FontWeight="DemiBold" Grid.Row="6" Grid.Column="1"/>
                 </Grid>                
             </StackPanel>
         </StackPanel>

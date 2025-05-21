@@ -39,7 +39,6 @@ C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\R
 C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Release\TomatoTrack.Properties.Resources.resources
 C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Release\TomatoTrack.csproj.GenerateResource.cache
 C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Release\TomatoTrack.csproj.CoreCompileInputs.cache
+C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Release\TomatoTr.D5B33232.Up2Date
 C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Release\TomatoTrack.exe
 C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Release\TomatoTrack.pdb
-C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Release\TomatoTrack.exe.config
-C:\Users\TiagoToi\OneDrive - Taxcel\Documentos\Puc\TomatoTrack\TomatoTrack\obj\Release\TomatoTr.D5B33232.Up2Date

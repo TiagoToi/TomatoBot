@@ -12,8 +12,10 @@ namespace TomatoTrack.Models
         public DateTime DataHora { get; set; }
         public int TotalTomates { get; set; }
         public int TomatesMaduros { get; set; }
-        public double PorcentagemAcertoIA { get; set; }
-        public double desvioPadrao { get; set; }
+        public double mediaScoreMaduros { get; set; }
+        public double desvioPadraoMaduros { get; set; }
+        public double mediaScoreVerdes { get; set; }
+        public double desvioPadraoVerdes { get; set; }
         public int NumeroImagens { get; set; }
         public List<byte[]> Imagens { get; set; }
 

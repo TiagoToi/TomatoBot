@@ -31,8 +31,10 @@ namespace TomatoTrack
                         Id = Convert.ToInt32(leitor["IdLote"]),
                         TotalTomates = Convert.ToInt32(leitor["NumeroTomates"]),
                         TomatesMaduros = Convert.ToInt32(leitor["QuantidadeMaduros"]),
-                        PorcentagemAcertoIA = Convert.ToDouble(leitor["AcertoIA"]),
-                        desvioPadrao = Convert.ToDouble(leitor["DesvioPadrao"]),
+                        mediaScoreMaduros = Convert.ToDouble(leitor["MediaScoreMaduros"]),
+                        desvioPadraoMaduros = Convert.ToDouble(leitor["DesvioPadraoMaduros"]),
+                        mediaScoreVerdes = Convert.ToDouble(leitor["MediaScoreVerdes"]),
+                        desvioPadraoVerdes = Convert.ToDouble(leitor["DesvioPadraoVerdes"]),
                         NumeroImagens = Convert.ToInt32(leitor["QuantidadeImagens"])
                     };
                     lote.setDateTime(leitor.GetString(leitor.GetOrdinal("DiaHora")));
@@ -78,16 +80,18 @@ namespace TomatoTrack
             }
         }
 
-        public static bool SalvarLote(int IdUser, String dataHora, int numTomates, int qntMaduros, double porcentagemAcerto, double desvioPadrao, List<byte[]> imagens)
+        public static bool SalvarLote(int IdUser, String dataHora, int numTomates, int qntMaduros, double mediaScoreMaduros, double desvioPadraoMaduros, double mediaScoreVerdes, double desvioPadraoVerdes, List<byte[]> imagens)
         {
             SQLiteConnection conn = Conectar();
-            SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Lotes (DiaHora, NumeroTomates, QuantidadeMaduros, AcertoIA, DesvioPadrao, QuantidadeImagens, IdUser) " +
-                "VALUES (@dataHora, @numTomates, @qntMaduros, @porcentagemAcerto, @desvioPadrao, @qntImagens, @idUser)", conn);
+            SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Lotes (DiaHora, NumeroTomates, QuantidadeMaduros, MediaScoreMaduros, DesvioPadraoMaduros, MediaScoreVerdes, DesvioPadraoVerdes, QuantidadeImagens, IdUser) " +
+                "VALUES (@dataHora, @numTomates, @qntMaduros, @MediaScoreMaduros, @DesvioPadraoMaduros, @MediaScoreVerdes, @DesvioPadraoVerdes, @qntImagens, @idUser)", conn);
             cmd.Parameters.AddWithValue("@dataHora", dataHora);
             cmd.Parameters.AddWithValue("@numTomates", numTomates);
             cmd.Parameters.AddWithValue("@qntMaduros", qntMaduros);
-            cmd.Parameters.AddWithValue("@porcentagemAcerto", porcentagemAcerto);
-            cmd.Parameters.AddWithValue("@desvioPadrao", desvioPadrao);
+            cmd.Parameters.AddWithValue("@MediaScoreMaduros", mediaScoreMaduros);
+            cmd.Parameters.AddWithValue("@DesvioPadraoMaduros", desvioPadraoMaduros);
+            cmd.Parameters.AddWithValue("@MediaScoreVerdes", mediaScoreVerdes);
+            cmd.Parameters.AddWithValue("@DesvioPadraoVerdes", desvioPadraoVerdes);
             cmd.Parameters.AddWithValue("@qntImagens", imagens.Count());
             cmd.Parameters.AddWithValue("@idUser", IdUser);
 

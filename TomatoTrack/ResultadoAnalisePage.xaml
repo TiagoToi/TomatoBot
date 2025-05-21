@@ -14,7 +14,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="60"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
@@ -37,28 +36,30 @@
                 <TextBlock Text="Data e Hora do Lote:" FontSize="20" FontWeight="Bold"/>
                 <TextBlock x:Name="txtDataHora" FontSize="18" Margin="0,5,0,15"/>
 
-                <TextBlock Text="Total de Tomates:" FontSize="20" FontWeight="Bold"/>
-                <TextBlock x:Name="txtTotalTomates" FontSize="18" Margin="0,5,0,0"/>
-                
+                <TextBlock Text="Maduros Detectados:" FontSize="20" FontWeight="Bold"/>
+                <TextBlock x:Name="txtQntMaduros" FontSize="18" Margin="0,5,0,15"/>
+
+                <TextBlock Text="Verdes Detectados:" FontSize="20" FontWeight="Bold"/>
+                <TextBlock x:Name="txtQntVerdes" FontSize="18" Margin="0,5,0,15"/>
+
                 <TextBlock Text="Número de Imagens:" FontSize="20" FontWeight="Bold"/>
-                <TextBlock x:Name="txtNumImagens" FontSize="18" Margin="0,5,0,0"/>
+                <TextBlock x:Name="txtNumImagens" FontSize="18" Margin="0,5,0,15"/>
             </StackPanel>
 
             <!-- Coluna 2 -->
             <StackPanel Grid.Column="1">
-                <TextBlock Text="Maduros Detectados:" FontSize="20" FontWeight="Bold"/>
-                <TextBlock x:Name="txtQntMaduros" FontSize="18" Margin="0,5,0,15"/>
+                <TextBlock Text="Total de Tomates:" FontSize="20" FontWeight="Bold"/>
+                <TextBlock x:Name="txtTotalTomates" FontSize="18" Margin="0,5,0,15"/>
 
-                <TextBlock Text="Média de Precisão da IA:" FontSize="20" FontWeight="Bold"/>
-                <TextBlock x:Name="txtPrecisaoIA" FontSize="18" Margin="0,5,0,0" />
+                <TextBlock Text="Média Score Maduros:" FontSize="20" FontWeight="Bold"/>
+                <TextBlock x:Name="txtMediaScoreMaduros" FontSize="18" Margin="0,5,0,15" />
 
-                <TextBlock Text="Desvio Padrão da Precisão:" FontSize="20" FontWeight="Bold"/>
-                <TextBlock x:Name="txtDesvioPadrao" FontSize="18" Margin="0,5,0,0" />
+                <TextBlock Text="Média Score Verdes:" FontSize="20" FontWeight="Bold"/>
+                <TextBlock x:Name="txtMediaScoreVerdes" FontSize="18" Margin="0,5,0,15" />
+
+                <Button x:Name="verImagens" Content="Visualizar Imagens Processadas" Grid.Row="3" Width="190" Height="40" Margin="0 20 0 0" Background="LightSteelBlue" FontWeight="DemiBold" HorizontalAlignment="Left" Click="verImagens_Click"/>
             </StackPanel>
         </Grid>
-
-        <!-- Galeria de imagens -->
-        <Button x:Name="verImagens" Content="Visualizar Imagens Processadas" Grid.Row="3" Width="190" Margin="10,10,0,10" Background="LightSteelBlue" FontWeight="DemiBold" HorizontalAlignment="Left" Click="verImagens_Click"/>
 
         <!-- Botões -->
         <StackPanel Grid.Row="4"
