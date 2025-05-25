@@ -31,12 +31,12 @@ namespace TomatoTrack
 
         private void CriarConta_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(NomeTextBox.Text) || string.IsNullOrEmpty(SenhaBox.Password) || string.IsNullOrEmpty(EmailTextBox.Text) || string.IsNullOrEmpty(ConfirmarSenhaTextBox.Text))
+            if (string.IsNullOrEmpty(NomeTextBox.Text) || string.IsNullOrEmpty(SenhaBox.Password) || string.IsNullOrEmpty(EmailTextBox.Text) || string.IsNullOrEmpty(ConfirmarSenhaBox.Password))
             {
                 MessageBox.Show("Preencha todos os campos.");
                 return;
             }
-            if (SenhaBox.Password != ConfirmarSenhaTextBox.Text)
+            if (SenhaBox.Password != ConfirmarSenhaBox.Password)
             {
                 MessageBox.Show("As senhas não coincidem.");
                 return;
@@ -46,10 +46,9 @@ namespace TomatoTrack
 
             if (cadastrou)
             {
-                NomeTextBox.Text = "";
-                SenhaBox.Password = "";
-                EmailTextBox.Text = "";
-                ConfirmarSenhaTextBox.Text = "";
+                LoginWindow loginWindow = new LoginWindow();
+                loginWindow.Show();
+                this.Close();
             }
         }
 

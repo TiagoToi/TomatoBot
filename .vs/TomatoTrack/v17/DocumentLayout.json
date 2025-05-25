@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{858E658A-3307-4738-8842-C7F5026530C0}|TomatoTrack\\TomatoTrack.csproj|c:\\users\\tiagotoi\\onedrive - taxcel\\documentos\\puc\\tomatotrack\\tomatotrack\\mainmenuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{858E658A-3307-4738-8842-C7F5026530C0}|TomatoTrack\\TomatoTrack.csproj|solutionrelative:tomatotrack\\mainmenuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{858E658A-3307-4738-8842-C7F5026530C0}|TomatoTrack\\TomatoTrack.csproj|c:\\users\\tiagotoi\\onedrive - taxcel\\documentos\\puc\\tomatotrack\\tomatotrack\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858E658A-3307-4738-8842-C7F5026530C0}|TomatoTrack\\TomatoTrack.csproj|solutionrelative:tomatotrack\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{858E658A-3307-4738-8842-C7F5026530C0}|TomatoTrack\\TomatoTrack.csproj|c:\\users\\tiagotoi\\onedrive - taxcel\\documentos\\puc\\tomatotrack\\tomatotrack\\enviarimagenspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{858E658A-3307-4738-8842-C7F5026530C0}|TomatoTrack\\TomatoTrack.csproj|solutionrelative:tomatotrack\\enviarimagenspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -51,11 +59,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainMenuWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\TomatoTrack\\MainMenuWindow.xaml",
+              "RelativeDocumentMoniker": "TomatoTrack\\MainMenuWindow.xaml",
+              "ToolTip": "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\TomatoTrack\\MainMenuWindow.xaml*",
+              "RelativeToolTip": "TomatoTrack\\MainMenuWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-25T23:24:44.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\TomatoTrack\\RegisterWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TomatoTrack\\RegisterWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\TomatoTrack\\RegisterWindow.xaml.cs",
+              "RelativeToolTip": "TomatoTrack\\RegisterWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwDIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T23:10:48.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EnviarImagensPage.xaml",
               "DocumentMoniker": "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\TomatoTrack\\EnviarImagensPage.xaml",
               "RelativeDocumentMoniker": "TomatoTrack\\EnviarImagensPage.xaml",
-              "ToolTip": "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\TomatoTrack\\EnviarImagensPage.xaml*",
-              "RelativeToolTip": "TomatoTrack\\EnviarImagensPage.xaml*",
+              "ToolTip": "C:\\Users\\TiagoToi\\OneDrive - Taxcel\\Documentos\\Puc\\TomatoTrack\\TomatoTrack\\EnviarImagensPage.xaml",
+              "RelativeToolTip": "TomatoTrack\\EnviarImagensPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-21T20:00:48.595Z",
               "EditorCaption": ""
