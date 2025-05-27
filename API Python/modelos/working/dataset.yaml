@@ -1,0 +1,6 @@
+
+train: C:\Users\joaov\OneDrive\Área de Trabalho\ProjetoInt\API Python\modelos\working\test\images
+val: C:\Users\joaov\OneDrive\Área de Trabalho\ProjetoInt\API Python\modelos\working\train\images
+
+nc: 2  # number of classes
+names: ['unripe', 'ripe']  # class names
